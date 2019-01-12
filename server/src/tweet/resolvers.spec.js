@@ -11,7 +11,7 @@ describe('Query', () => {
                     ],
                 },
             };
-            return Query.Tweets(null, null, context).then(results => {
+            return Query.Tweets(null, { }, context).then(results => {
                 expect(results).toEqual([
                     { id: 1, body: 'hello' },
                     { id: 2, body: 'world' },

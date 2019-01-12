@@ -15,13 +15,9 @@ extend type Mutation {
 }
 type Tweet {
     id: ID!
-    # The tweet text. No more than 140 characters!
     body: String
-    # When the tweet was published
     date: Date
-    # Who published the tweet
     Author: User
-    # Views, retweets, likes, etc
     Stats: Stat
 }
 `;
